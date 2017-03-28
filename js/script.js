@@ -9,29 +9,29 @@
 		    title: 'クリスマスソング',
 		    artist: 'back number',
 		    album: 'クリスマスソング',
-		    cover: 'https://images-fe.ssl-images-amazon.com/images/I/31eRU7YYbyL.jpg',
-		    mp3: 'https://www.jpmarumaru.com/file/mp3/b035d6563a2adac9f822940c145263ce.mp3'
+		    cover: 'source/cover/back number - クリスマスソング.jpg',
+		    mp3: 'source/media/back number - クリスマスソング.mp3'
   		},
   		{
   			title: 'ハッピーエンド',
 		    artist: 'back number',
 		    album: 'ハッピーエンド',
-		    cover: 'https://images-na.ssl-images-amazon.com/images/I/71vr0y0XOsL._SL1158_.jpg',
-		    mp3: 'https://www.jpmarumaru.com/file/mp3/c3cbd51329ff1a0169174e9a78126ee1.mp3'
+		    cover: 'source/cover/back number - ハッピーエンド.jpg',
+		    mp3: 'source/media/back number - ハッピーエンド.mp3'
   		},
   		{
 		    title: '繋いだ手から',
 		    artist: 'back number',
 		    album: '繋いだ手から',
-		    cover: 'https://images-na.ssl-images-amazon.com/images/I/41pGyn71kML.jpg',
-		    mp3: 'https://www.jpmarumaru.com/file/mp3/4feb2371a1843d099b28dd419dbab1ef.mp3'
+		    cover: 'source/cover/back number - 高嶺の花子さん.jpg',
+		    mp3: 'source/media/back number - 繋いだ手から.mp3'
   		},
   		{
 		    title: '高嶺の花子さん',
 		    artist: 'back number',
 		    album: '高嶺の花子さん',
-		    cover: 'https://images-fe.ssl-images-amazon.com/images/I/41eO6ylr1JL._SS500.jpg',
-		    mp3: 'https://www.jpmarumaru.com/file/mp3/0e189c35adab992d274c294586143ec9.mp3'
+		    cover: 'source/cover/back number - 繋いだ手から.jpg',
+		    mp3: 'source/media/back number - 高嶺の花子さん.mp3'
   		}
   ];
 
@@ -170,7 +170,7 @@
 	var loadMusic = function(i){
 		var item = playlist[i],
 			newaudio = $('<audio>').html('<source src="'+item.mp3+'"><source src="'+item.ogg+'">').appendTo('#player');
-		
+
 		$('.cover').html('<img src="'+item.cover+'" alt="'+item.album+'">');
 		$('.tag').html('<strong>'+item.title+'</strong><span class="artist">'+item.artist+'</span><span class="album">'+item.album+'</span>');
 		$('#playlist li').removeClass('playing').eq(i).addClass('playing');
